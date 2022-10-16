@@ -3,11 +3,251 @@ html {
 }
 
 body {
-  background-image: url(design/desktop-design.jpg);
-  background-repeat: no-repeat;
-  height: 90vh;
-  width: 100%;
-  background-position: top center;
   font-family: "Rubik", sans-serif;
+  background-color: #0f1424;
+}
+
+.wrapper {
+  width: 1115px;
+  height: 520px;
+  margin: 0 auto;
+  margin-top: 250px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "report work play study" "report exercise social self";
+  gap: 1.55rem;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+section {
+  border-radius: 15px;
+}
+
+.report {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: report;
+}
+
+.content {
+  width: 204px;
+  height: 157px;
+  margin-top: 2.7rem;
+  padding: 20px 27px;
+  background-color: #1d2049;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content:hover {
+  background-color: #33387a;
+}
+
+.content-body {
+  width: 172.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: aliceblue;
+}
+
+.content-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: aliceblue;
+}
+
+.content-header img {
+  margin-top: 0.8rem;
+  margin-left: -0.8rem;
+  width: 10%;
+  height: 10%;
+}
+
+.content-header .title {
+  -webkit-margin-before: 0.4rem;
+          margin-block-start: 0.4rem;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+  font-weight: 500;
+}
+
+.last {
+  -webkit-margin-before: 0.5rem;
+          margin-block-start: 0.5rem;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+  font-size: 16px;
+  color: #bdc1ff;
+  letter-spacing: -0.9px;
+}
+
+.time {
+  font-size: 3.2rem;
+  -webkit-margin-before: 0.27rem;
+          margin-block-start: 0.27rem;
+  -webkit-margin-after: 0rem;
+          margin-block-end: 0rem;
+  font-weight: 300;
+}
+
+.content-large {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 260px;
+  height: 518px;
+  background-color: #1c1f4a;
+  border-radius: 15px;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.content-sup {
+  padding: 13px 30px;
+  width: 200px;
+  height: 330px;
+  border-radius: 15px;
+  background-color: #5847eb;
+}
+
+.content-sup img {
+  margin-top: 1.1rem;
+  width: 40%;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.content-sup .name {
+  font-size: 40px;
+  font-weight: 300;
+  -webkit-margin-before: 0.3rem;
+          margin-block-start: 0.3rem;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  color: white;
+}
+
+.subtitle {
+  -webkit-margin-before: 2rem;
+          margin-block-start: 2rem;
+  -webkit-margin-after: 0rem;
+          margin-block-end: 0rem;
+  font-weight: 400;
+  font-size: 16px;
+  color: #bdc1ff;
+}
+
+.content-inf {
+  padding: 2px 32px;
+  height: 120px;
+}
+
+.content-inf p {
+  -webkit-margin-before: 1.2rem;
+          margin-block-start: 1.2rem;
+  -webkit-margin-after: 0rem;
+          margin-block-end: 0rem;
+  font-weight: 400;
+  font-size: 18px;
+  color: #6f76c8;
+}
+
+.content-inf p:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.work {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: work;
+  background-color: #ff8c66;
+  background-image: url(./images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: 89% -5%;
+}
+
+.play {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: play;
+  background-color: #56c2e6;
+  background-image: url(./images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: 89% 0%;
+}
+
+.study {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: study;
+  background-color: #ff5c7c;
+  background-image: url(./images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: 89% -6%;
+}
+
+.exercise {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: exercise;
+  background-color: #4acf81;
+  background-image: url(./images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: 89% 0%;
+}
+
+.social {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: social;
+  background-color: #7536d3;
+  background-image: url(./images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: 89% -6%;
+}
+
+.self {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: self;
+  background-color: #f1c65b;
+  background-image: url(./images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: 89% -6%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,1 +1,148 @@
-/* No CSS *//*# sourceMappingURL=style-mobile.css.map */
+@media screen and (max-width: 1146px) {
+  .wrapper {
+    width: 331px;
+    height: 1469px;
+    margin-top: 3.4rem;
+    padding: 0 22px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section {
+    margin-top: -2px;
+    width: 330px;
+    height: 165px;
+  }
+  .report {
+    width: 330px;
+    height: 219px;
+  }
+  section .content-large {
+    width: 330px;
+    height: 219px;
+    margin: 0 auto;
+  }
+  .content-sup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 13px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 301px;
+    height: 132px;
+    margin-top: 0;
+  }
+  .content-sup .sup {
+    text-align: center;
+    vertical-align: middle;
+    width: 98px;
+  }
+  .content-sup img {
+    width: 65px;
+    height: auto;
+  }
+  .content-sup .inf {
+    width: 180px;
+    height: auto;
+    padding: 12px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content-sup .subtitle {
+    font-size: 14.4px;
+    -webkit-margin-before: 1.15rem;
+            margin-block-start: 1.15rem;
+    -webkit-margin-after: 0rem;
+            margin-block-end: 0rem;
+    font-weight: 500;
+  }
+  .content-sup .name {
+    font-size: 24.34px;
+    -webkit-margin-before: 0.2rem;
+            margin-block-start: 0.2rem;
+  }
+  .content-inf {
+    height: 51px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 22px;
+    padding-left: 7px;
+  }
+  .content-inf p {
+    padding: 0 27px;
+    -webkit-margin-before: 0.3rem;
+            margin-block-start: 0.3rem;
+  }
+  .content {
+    width: 276px;
+    height: 86px;
+    margin: 0 auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 2.2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .content-header {
+    width: 100%;
+    height: 1.5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .content-body {
+    width: 100%;
+    height: 2.2rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .content-header img {
+    margin-top: 0.8rem;
+    margin-left: -0.8rem;
+    width: 20px;
+    height: 5px;
+  }
+  .time {
+    font-size: 1.9rem;
+    -webkit-margin-before: 0rem;
+            margin-block-start: 0rem;
+    -webkit-margin-after: 0rem;
+            margin-block-end: 0rem;
+    font-weight: 300;
+  }
+  .last {
+    -webkit-margin-before: 0.7rem;
+            margin-block-start: 0.7rem;
+    -webkit-margin-after: 0rem;
+            margin-block-end: 0rem;
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=style-mobile.css.map */

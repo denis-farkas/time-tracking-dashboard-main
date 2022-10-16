@@ -3,10 +3,195 @@ html {
 }
 
 body {
-  background-image: url(design/desktop-design.jpg);
-  background-repeat: no-repeat;
-  height: 90vh;
-  width: 100%;
-  background-position: top center;
   font-family: "Rubik", sans-serif;
+  background-color: hsl(226, 43%, 10%);
+}
+
+.wrapper {
+  width: 1115px;
+  height: 520px;
+  margin: 0 auto;
+  margin-top: 250px;
+  display: grid;
+  grid-template-areas:
+    "report work play study"
+    "report exercise social self";
+  gap: 1.55rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+section {
+  border-radius: 15px;
+}
+
+.report {
+  grid-area: report;
+}
+
+.content {
+  width: 204px;
+  height: 157px;
+  margin-top: 2.7rem;
+  padding: 20px 27px;
+  background-color: hsl(236, 44%, 20%);
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content:hover {
+  background-color: hsl(236, 41%, 34%);
+}
+
+.content-body {
+  width: 172.5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: aliceblue;
+}
+
+.content-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: aliceblue;
+}
+
+.content-header img {
+  margin-top: 0.8rem;
+  margin-left: -0.8rem;
+  width: 10%;
+  height: 10%;
+}
+
+.content-header .title {
+  margin-block-start: 0.4rem;
+  margin-block-end: 1rem;
+  font-weight: 500;
+}
+
+.last {
+  margin-block-start: 0.5rem;
+  margin-block-end: 1rem;
+  font-size: 16px;
+  color: hsl(236, 100%, 87%);
+  letter-spacing: -0.9px;
+}
+
+.time {
+  font-size: 3.2rem;
+  margin-block-start: 0.27rem;
+  margin-block-end: 0rem;
+  font-weight: 300;
+}
+
+.content-large {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 518px;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.content-sup {
+  padding: 13px 30px;
+  width: 200px;
+  height: 330px;
+  border-radius: 15px;
+  background-color: hsl(246, 80%, 60%);
+}
+
+.content-sup img {
+  margin-top: 1.1rem;
+  width: 40%;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.content-sup .name {
+  font-size: 40px;
+  font-weight: 300;
+  margin-block-start: 0.3rem;
+  margin-block-end: 0;
+  color: white;
+}
+
+.subtitle {
+  margin-block-start: 2rem;
+  margin-block-end: 0rem;
+  font-weight: 400;
+  font-size: 16px;
+  color: hsl(236, 100%, 87%);
+}
+
+.content-inf {
+  padding: 2px 32px;
+  height: 120px;
+}
+
+.content-inf p {
+  margin-block-start: 1.2rem;
+  margin-block-end: 0rem;
+  font-weight: 400;
+  font-size: 18px;
+  color: hsl(235, 45%, 61%);
+}
+
+.content-inf p:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.work {
+  grid-area: work;
+  background-color: hsl(15, 100%, 70%);
+  background-image: url(./images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: 89% -5%;
+}
+.play {
+  grid-area: play;
+  background-color: hsl(195, 74%, 62%);
+  background-image: url(./images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: 89% 0%;
+}
+.study {
+  grid-area: study;
+  background-color: hsl(348, 100%, 68%);
+  background-image: url(./images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: 89% -6%;
+}
+.exercise {
+  grid-area: exercise;
+  background-color: hsl(145, 58%, 55%);
+  background-image: url(./images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: 89% 0%;
+}
+.social {
+  grid-area: social;
+  background-color: hsl(264, 64%, 52%);
+  background-image: url(./images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: 89% -6%;
+}
+.self {
+  grid-area: self;
+  background-color: hsl(43, 84%, 65%);
+  background-image: url(./images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: 89% -6%;
 }
